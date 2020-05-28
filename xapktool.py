@@ -93,7 +93,7 @@ class XAPK:
             shutil.rmtree(zip_dir)
             print('cleanup: OK')
 
-def main(args):
+def main(*args):
     folder = args[0]
     xapk = XAPK(folder)
     xapk.save()
